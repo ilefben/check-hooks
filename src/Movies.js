@@ -1,5 +1,6 @@
 const Movies = [
-  {
+  { trailer:<iframe width="560" height="315" src="https://www.youtube.com/embed/k1gEdeF3Ka4?si=QYVMmn5DTY_AiHMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+    moredetails:"Un soldat chasseur de trésor réveille une princesse de l'Égypte antique qui a patienté des siècles pour se venger d'un monde qui lui a fait du tort. Regardez autant que vous voulez.",
     title: "la momie",
     description:
       "un soldat chasseur de trésor réveille une princesse de l'Egypte antique.",

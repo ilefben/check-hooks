@@ -2,7 +2,10 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
+
 const MovieCard = ({ movie }) => {
+  const navigate = useNavigate();
   return (
     <div>
       <Card style={{ width: "18rem" }}>
@@ -14,6 +17,7 @@ const MovieCard = ({ movie }) => {
             Rating: {movie.rating}
           </Card.Text>
           <Button variant="primary">Play</Button>
+          <Button variant="dangerous" onClick={()=>navigate("/MovieDetails")}>See more</Button>
         </Card.Body>
       </Card>
     </div>
