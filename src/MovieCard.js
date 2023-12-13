@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-
 const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
   return (
@@ -17,7 +16,12 @@ const MovieCard = ({ movie }) => {
             Rating: {movie.rating}
           </Card.Text>
           <Button variant="primary">Play</Button>
-          <Button variant="dangerous" onClick={()=>navigate("/MovieDetails")}>See more</Button>
+          <Button
+            variant="primary"
+            onClick={() => navigate("/MovieDetails", { state: { movie } })}
+          >
+            See more
+          </Button>
         </Card.Body>
       </Card>
     </div>
